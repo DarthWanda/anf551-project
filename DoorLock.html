@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Log in</title>
+ <style>
+body {font-family: Arial;}
+* {box-sizing: border-box}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+.wrapper {
+  text-align: center;
+}
+
+/* Set style for all buttons */
+#button {
+  background-color: white;
+  color: black;
+  border: 2px solid;
+  cursor: pointer;
+  position: absolute;
+  opacity: 0.9;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img {
+  width: 25%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.pwd {
+  float: right;
+  padding-top: 16px;
+}
+
+span.account {
+  float: right;
+  padding-top: 16px;
+}
+
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  span.pwd {
+    display: block;
+    float: none;
+  }
+
+  span.newaccount {
+    display: block;
+    float: none;
+  }
+}
+
+.center {
+  position: relative;
+  text-align: center;
+}
+
+.signupbtn{
+   width: 20%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  opacity: 0.9;
+}
+</style>
+</head>
+  <body style="background-color:yellow;">
+    <h1>Photagram</h1>
+    <form action="/loginPage.php">
+      <div class="imgcontainer">
+        <img src="avatar1.png" alt="Avatar Icon">
+      </div>
+
+
+      <div class="container">
+        <label><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email">
+
+        <label><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="password">
+
+        <label>
+          <input type="checkbox" checked="checked"> Remember me
+        </label>
+      </div>
+    </form>
+
+    <div class="center">
+    <button type="submit" id="sbt" class="signupbtn">Join Us</button>
+  </div>
+    <script>document.getElementById("sbt").onclick = function() {
+              location.href = "mainPage2.html";
+            };
+          </script>
+    <span class="pwd">Forgot <a href="newPassword.html">password?</a></span>
+    <br>
+    <span class="newaccount">Don't have an <a href="registerPage.html">account?</a></span>
+
+
+  </body>
+</html>
